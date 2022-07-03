@@ -13,10 +13,10 @@ class MessageCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.contentView.backgroundColor = UIColor.green
         self.contentView.addSubview(label)
         
         label.frame = self.contentView.frame
+        label.textAlignment = .center
         label.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
         label.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
         label.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true

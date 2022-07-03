@@ -20,6 +20,7 @@
 		10BDF34E2871D230007AE9BD /* MessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF34C2871D230007AE9BD /* MessageListViewModel.swift */; };
 		10BDF3512871D2C3007AE9BD /* MessageListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF3502871D2C3007AE9BD /* MessageListDataManager.swift */; };
 		10BDF3532871DB0C007AE9BD /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF3522871DB0C007AE9BD /* MessageCollectionViewCell.swift */; };
+		10BDF35628725893007AE9BD /* MockDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF35528725893007AE9BD /* MockDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		10BDF34C2871D230007AE9BD /* MessageListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListViewModel.swift; sourceTree = "<group>"; };
 		10BDF3502871D2C3007AE9BD /* MessageListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListDataManager.swift; sourceTree = "<group>"; };
 		10BDF3522871DB0C007AE9BD /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		10BDF35528725893007AE9BD /* MockDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		10BDF3162871D036007AE9BD /* MessagingAppChallengeiOS11 */ = {
 			isa = PBXGroup;
 			children = (
+				10BDF35428725871007AE9BD /* Mock */,
 				10BDF34F2871D2C3007AE9BD /* DataManager */,
 				10BDF34A2871D1ED007AE9BD /* MessageList */,
 				10BDF3172871D036007AE9BD /* AppDelegate.swift */,
@@ -152,6 +155,14 @@
 				10BDF3502871D2C3007AE9BD /* MessageListDataManager.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		10BDF35428725871007AE9BD /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				10BDF35528725893007AE9BD /* MockDataManager.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				10BDF31C2871D036007AE9BD /* ViewController.swift in Sources */,
 				10BDF3182871D036007AE9BD /* AppDelegate.swift in Sources */,
 				10BDF34E2871D230007AE9BD /* MessageListViewModel.swift in Sources */,
+				10BDF35628725893007AE9BD /* MockDataManager.swift in Sources */,
 				10BDF3512871D2C3007AE9BD /* MessageListDataManager.swift in Sources */,
 				10BDF3532871DB0C007AE9BD /* MessageCollectionViewCell.swift in Sources */,
 				10BDF34D2871D230007AE9BD /* MessageModel.swift in Sources */,

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import StreetHawkCore_Pointzi
 
 // If I change this UIViewController to StreetHawkBaseViewController, the app crashes on launch
 class ViewController: UIViewController {

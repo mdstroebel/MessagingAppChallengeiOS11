@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import StreetHawkCore_Pointzi
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Pointzi.sharedInstance().registerInstall(forApp: "MessagingApp", withDebugMode: true) {
+            Pointzi.sharedInstance().tagCuid("mdstroebel@gmail.com")
+        }
         return true
     }
 

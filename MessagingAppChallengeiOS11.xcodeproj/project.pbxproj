@@ -21,6 +21,8 @@
 		10BDF3512871D2C3007AE9BD /* MessageListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF3502871D2C3007AE9BD /* MessageListDataManager.swift */; };
 		10BDF3532871DB0C007AE9BD /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF3522871DB0C007AE9BD /* MessageCollectionViewCell.swift */; };
 		10BDF35628725893007AE9BD /* MockDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF35528725893007AE9BD /* MockDataManager.swift */; };
+		10BDF3592872597F007AE9BD /* PointziSPMWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 10BDF3582872597F007AE9BD /* PointziSPMWrapper */; };
+		10BDF35C287259A3007AE9BD /* StreetHawkCore_Pointzi in Frameworks */ = {isa = PBXBuildFile; productRef = 10BDF35B287259A3007AE9BD /* StreetHawkCore_Pointzi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BDF3492871D04C007AE9BD /* MarcsMessageWebSocketClient in Frameworks */,
+				10BDF3592872597F007AE9BD /* PointziSPMWrapper in Frameworks */,
+				10BDF35C287259A3007AE9BD /* StreetHawkCore_Pointzi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +187,8 @@
 			name = MessagingAppChallengeiOS11;
 			packageProductDependencies = (
 				10BDF3482871D04C007AE9BD /* MarcsMessageWebSocketClient */,
+				10BDF3582872597F007AE9BD /* PointziSPMWrapper */,
+				10BDF35B287259A3007AE9BD /* StreetHawkCore_Pointzi */,
 			);
 			productName = MessagingAppChallengeiOS11;
 			productReference = 10BDF3142871D036007AE9BD /* MessagingAppChallengeiOS11.app */;
@@ -258,6 +264,8 @@
 			mainGroup = 10BDF30B2871D036007AE9BD;
 			packageReferences = (
 				10BDF3472871D04C007AE9BD /* XCRemoteSwiftPackageReference "MarcsMessageWebSocketClient" */,
+				10BDF3572872597F007AE9BD /* XCRemoteSwiftPackageReference "pointzispmwrapper" */,
+				10BDF35A287259A3007AE9BD /* XCRemoteSwiftPackageReference "swiftpackage" */,
 			);
 			productRefGroup = 10BDF3152871D036007AE9BD /* Products */;
 			projectDirPath = "";
@@ -418,6 +426,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -471,6 +480,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -660,6 +670,22 @@
 				kind = branch;
 			};
 		};
+		10BDF3572872597F007AE9BD /* XCRemoteSwiftPackageReference "pointzispmwrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/pointzi/sdks/pointzispmwrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		10BDF35A287259A3007AE9BD /* XCRemoteSwiftPackageReference "swiftpackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/pointzi/sdks/swiftpackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -667,6 +693,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 10BDF3472871D04C007AE9BD /* XCRemoteSwiftPackageReference "MarcsMessageWebSocketClient" */;
 			productName = MarcsMessageWebSocketClient;
+		};
+		10BDF3582872597F007AE9BD /* PointziSPMWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10BDF3572872597F007AE9BD /* XCRemoteSwiftPackageReference "pointzispmwrapper" */;
+			productName = PointziSPMWrapper;
+		};
+		10BDF35B287259A3007AE9BD /* StreetHawkCore_Pointzi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10BDF35A287259A3007AE9BD /* XCRemoteSwiftPackageReference "swiftpackage" */;
+			productName = StreetHawkCore_Pointzi;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
